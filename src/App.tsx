@@ -7,7 +7,7 @@ function App() {
     <>
       <header>
         <nav>
-          <h1>Sorting Algorythm Visualizer with React</h1>
+          <h1>Sorting Algorithm Visualizer with React</h1>
           <a
             href="https://pierregueroult.dev"
             target="_blank"
@@ -51,7 +51,7 @@ function App() {
           </li>
         </ul>
         <p>Coded with heart by Pierre Guéroult</p>
-        {/* <WebsiteCarbonBadge url={window.location.href} /> */}
+        <WebsiteCarbonBadge url={window.location.href} />
       </footer>
     </>
   );
