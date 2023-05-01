@@ -1,25 +1,59 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { WebsiteCarbonBadge } from "react-websitecarbon-badge";
+import SorterContainer from "./components/SorterContainer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <nav>
+          <h1>Sorting Algorythm Visualizer with React</h1>
+          <a
+            href="https://pierregueroult.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            pierregueroult.dev
+          </a>
+        </nav>
       </header>
-    </div>
+      <main>
+        <SorterContainer />
+      </main>
+      <footer>
+        <ul>
+          <li>
+            <a
+              href="https://github.com/pierregueroult"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/in/pierregueroult"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://instagram.com/pierre.gueroult"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>
+          </li>
+        </ul>
+        <p>Coded with heart by Pierre Guéroult</p>
+        {/* <WebsiteCarbonBadge url={window.location.href} /> */}
+      </footer>
+    </>
   );
 }
 
